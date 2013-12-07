@@ -348,4 +348,6 @@ snippet debug_trace
     $SIG{'__DIE__'} = sub {
         require Carp; Carp::confess
     };
-
+snippet subt
+    subtest '${1:test_name}' => sub {
+    };
